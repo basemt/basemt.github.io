@@ -1,0 +1,14 @@
+body {
+background-color: blanchedalmond;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin: 100px;
+padding: 50px;
+}
+
+h1, p {
+    color: blue;
+}
+
+img {
+    max-width: 500px;
+}
