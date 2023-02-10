@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(247, 214, 174);
+    margin: 100px;
+    }
+    
+    h1 {
+        color: blue;
+        font-family: 'Fjalla One';
+        text-align: center;
+        font-size: 90px;
+        margin-top: -20pt;
+        
+    }
+    
+    h2 {
+        color: blue;
+        font-family: 'Fjalla One';
+        text-align: left;
+        font-size: 30px;
+    }
+    
+    p {
+        color: blue;
+        font-family: 'Fjalla One';
+        text-align: right;
+        font-size: 30px;
+    }
+
+   
+    .img1{
+        width: 100%;
+        height: auto;
+    }
+    
+    
