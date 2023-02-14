@@ -1,0 +1,23 @@
+body {
+    background-color: #ffffff;
+}
+
+.partytime {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #FF8A8A;
+    font-size:30px
+}
+
+.partytime:hover {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-position: center;
+    background-size: 80%;
+    background-color: #FF8A8A;
+background-image: url(./imgsp1/party.png)
+}

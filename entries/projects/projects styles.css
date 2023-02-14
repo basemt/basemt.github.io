@@ -19,12 +19,12 @@ body {
         font-size: 30px;
     }
     
-.proj1sketch{
-    color: blue;
-    font-family: 'Fjalla One';
-    text-align: left;
-    font-size: 30px;
-}
+    .p1{
+        color: blue;
+        font-family: 'Fjalla One';
+        text-align: left;
+        font-size: 30px;
+    }
 
     p {
         color: blue;

@@ -1,0 +1,179 @@
+body {
+    background-image: url("./imgsp1/background3.jpg");
+    background-size: 1440px;
+}
+
+.p1{
+    text-align: center;
+    margin-top: 220px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.p2{
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.poetry{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.poetry {
+    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+    transition: color 1s; /* For modern browsers */
+}
+.poetry:hover {
+    color: #ff0000;
+}
+
+div {
+    padding: 20px;
+    display: none;
+  }
+    
+  span:hover + div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .poetryhover{
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: red;
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size:30px
+}
+
+.paul{
+    display: block;
+    text-align: center;
+    padding: 10px;
+ text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 25px;
+    color: red;
+}
+
+.stickynote{
+    text-align: left;
+  
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.paul {
+    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+    transition: color 1s; /* For modern browsers */
+}
+.paul:hover {
+    color: blue;
+}
+
+.paul:hover + .stickynote {
+  display: block;
+  width: 296px;
+  height: 335px;
+  margin-left: 200px;
+  background-color: #FFE815;
+  box-shadow: 5px 5px rgb(82, 82, 82);
+  position: relative;
+  animation: myfirst 5s linear 1.5s infinite alternate;
+}
+
+@keyframes myfirst {
+   0%   {background-color:#FFE815; left:0px; top:0px;}
+   10%   {background-color:blue; left:100px; top:0px;}
+   20%   {background-color:#FFE815; left:200px; top:0px;}
+   30%   {background-color:#FFE815; left:100px; top:0px;right:100px;}
+  40%  {background-color:blue; left:0px; top:0px; right:200px;}
+  50%  {background-color:#FFE815; left:100px; top:0px; right:200px;}
+  60%  {background-color:#FFE815; left:200px; top:100px; right:200px;}
+  70%  {background-color:blue; left:100px; top:100px; right:100px;}
+  80%  {background-color:#FFE815; left:0px; top:100px; right:0px;}
+  90%  {background-color:#FFE815; left:0px; top:100px; right:100px;}
+  100% {background-color:blue; left:0px; top:0px; right:200px;}
+  110% {background-color:#FFE815; left:0px; top:0px; right:100px;}
+  120% {background-color:#FFE815; left:0px; top:0px; right:0px;}
+}
+
+.p3{
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    margin-left: 350px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.p4{
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 0px;
+    margin-right: 350px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.logoff{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    color: blueviolet;
+    font-size:30px
+}
+
+.logoff{
+text-decoration-line: underline;
+text-decoration-style: wavy;
+text-decoration-color: #ff6923;
+}
+
+.logoff {
+    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+    transition: color 1s; /* For modern browsers */
+}
+.logoff:hover {
+    color: #ff6923;
+    text-decoration-line: underline;
+text-decoration-style: wavy;
+text-decoration-color: blueviolet;
+}

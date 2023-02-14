@@ -1,0 +1,127 @@
+body {
+    background-image: url("./imgsp1/background1.jpg");
+    background-size: 1440px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 220px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.title {
+    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+    transition: color 1s; /* For modern browsers */
+}
+.title:hover {
+    color: #ff0000;
+}
+
+h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size:40px
+}
+
+h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size:25px
+}
+
+  .btn {
+    display: block;
+    background: #FFE815;
+    text-decoration: none;
+    width: 160px;
+    height: 42px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;   
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.btn.test-completed::after,
+.btn.test-completed::before {
+    content: "";
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 2.5;
+
+    transition: all 400ms;
+    top: 0;
+}
+
+.btn.btn.test-completed:hover::after {
+    top: -36px;
+}
+
+.btn.test-completed::before {
+    content: "[REDACTED]";
+    top: 36px;
+}
+
+.btn.btn.test-completed:hover::before {
+    top: 0;
+}
+
+.btn {
+    display: block;
+    background: #FFE815;
+    text-decoration: none;
+    width: 160px;
+    height: 42px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.btn.test-completed1::after,
+.btn.test-completed1::before {
+    content: "";
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: blue;
+    text-transform: uppercase;
+    line-height: 2.5;
+
+    transition: all 400ms;
+    top: 0;
+}
+
+.btn.btn.test-completed1:hover::after {
+    top: -36px;
+}
+
+.btn.test-completed1::before {
+    content: "{BEGIN}";
+    top: 36px;
+}
+
+.btn.btn.test-completed1:hover::before {
+    top: 0;
+}
+
+
+
+
+
