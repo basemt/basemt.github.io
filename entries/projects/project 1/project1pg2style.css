@@ -1,26 +1,22 @@
 body {
-    background-color: #ffffff;
-}
-
-.partytime {
-    text-align: center;
-    display: block;
-    justify-content: center;
-    margin-top: 330px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: #FF8A8A;
-    font-size:30px
-}
-
-.partytime:hover {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  background-position: center;
-    background-size: 80%;
+    background-image: url(./imgsp1/party.png);
     background-color: #FF8A8A;
-background-image: url(./imgsp1/party.png)
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 100px 15px;
+    background-position-x: 290px;
+    background-position-y: 187px;
+}
+
+.spotify{
+  left: 1260px;
+}
+
+.shape{
+  position: absolute;
+  top: 620px;
+  left: 1260px;
+  right: 10px;
 }
 
 .circle {
@@ -51,3 +47,18 @@ background-image: url(./imgsp1/party.png)
      font-style: italic;
      color: blue;
    }
+
+   .previous{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+a:visited { 
+  text-decoration: none; 
+  color: blue
+ }

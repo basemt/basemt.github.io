@@ -3,9 +3,19 @@ body {
     background-size: 1440px;
 }
 
+.previous{
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 350px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
 .p1{
     text-align: center;
-    margin-top: 220px;
+    margin-top: 0px;
     margin-bottom: 0px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -109,7 +119,7 @@ h2{
   background-color: #FFE815;
   box-shadow: 5px 5px rgb(82, 82, 82);
   position: relative;
-  animation: myfirst 5s linear 1.5s infinite alternate;
+  animation: myfirst 10s linear 2s infinite alternate;
 }
 
 @keyframes myfirst {
@@ -148,7 +158,13 @@ h2{
     font-size: 20px;
 }
 
-.logoff{
+
+
+a:visited { 
+    text-decoration: none; 
+   }
+
+   .text-rainbow-animation {
     display: block;
     justify-content: center;
     text-align: center;
@@ -157,23 +173,22 @@ h2{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: bold;
-    color: blueviolet;
     font-size:30px
-}
+   }
+   .text-rainbow-animation {
+     background-image: 
+      linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 60s linear infinite;
+  }
+  
+  @keyframes rainbow-animation {
+      to {
+          background-position: 4500vh;
+      }}
 
-.logoff{
-text-decoration-line: underline;
-text-decoration-style: wavy;
-text-decoration-color: #ff6923;
-}
-
-.logoff {
-    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
-    transition: color 1s; /* For modern browsers */
-}
-.logoff:hover {
-    color: #ff6923;
-    text-decoration-line: underline;
-text-decoration-style: wavy;
-text-decoration-color: blueviolet;
-}
+      a:visited { 
+        text-decoration: none; 
+        color: black
+       }

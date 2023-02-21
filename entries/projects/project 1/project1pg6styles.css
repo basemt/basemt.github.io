@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+}
+
+.img {
+    position: absolute;
+    height: 200px;
+    width: auto;
+    top: 270px;
+}
+
+div {
+display: flex;
+justify-content: center;
+}
+  
+  h1{
+    font-family: Great Vibes;
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  h1 {
+    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+    transition: color 1s; /* For modern browsers */
+}
+h1:hover {
+    color: #ff0000;
+}
+
+h2{
+    font-family: Great Vibes;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 210px;
+  }
+
+
+h3{
+    font-family: Great Vibes;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 50px;
+  }
+
+  .button2{
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    width: 220px;
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  .button2 {
+    -webkit-transition: color 1s; 
+    transition: color 1s; 
+}
+.button2:hover {
+    background-color: #FFE815;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: black; 
+   }
+
+
+
+
+
+
+
+
+
