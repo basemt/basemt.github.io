@@ -33,6 +33,20 @@ body {
         font-size: 30px;
     }
 
+    .jsondemo{
+        color: blue;
+        font-family: 'Fjalla One';
+        text-align: left;
+        font-size: 30px;
+    }
+
+    .layoutdemo{
+        color: blue;
+        font-family: 'Fjalla One';
+        text-align: left;
+        font-size: 30px;
+    }
+
     p {
         color: blue;
         font-family: 'Fjalla One';

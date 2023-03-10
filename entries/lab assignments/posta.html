@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Assignments - Basem Tash</title>
+<style>
+    html, body{
+        margin: 0;
+        padding:0;
+    }
+
+    p{
+        color:white;
+    }
+
+    .content-flex {
+
+    }
+
+    .content-flex p {
+font-size: 7vh;
+    }
+
+    .footer-flex  {
+display: flex;
+height: 5%;
+justify-content: space-between;
+    }
+
+    .footer-flex p {
+font-size: 5vh;
+margin:0;
+    }
+
+.mid{
+    position:relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.green{
+    display: block;
+    position: fixed;
+    background-color: green;
+    z-index: 2;
+    height: 150px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    left:calc((100%-300px)/2);
+    top:calc((100%-150px)/2);
+}
+
+.green:hover{
+    z-index: -1;
+}
+
+</style>
+</head>
+<body style="background-color: black;">
+
+<div class = "green"></div>
+<div class="content-flex">
+    <div class="top"><p>Toshio <br> Matsumoto</p></div>
+    <div class="mid">
+        <p>Survey <br><br> (1967-1987)</p>
+    </div>
+    <div class="bottom"><p>31.07 -<br>11.09.2020</p></div>
+</div>
+
+
+
+</body>
+</html>
