@@ -1,0 +1,358 @@
+/* Some default properties to begin with  */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-right: 2rem;
+  }
+  
+  .footer {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* header styles begin here */
+  .header {
+    width: 100%;
+    padding: 0 2rem;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: black;
+    top: 0;
+  }
+  
+  .main-title {
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .navigation {
+    display: none;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+  }
+  
+  .mobile-menu {
+    position: absolute;
+    font-family: 'Bebas Neue';
+    text-decoration: underline;
+    font-size: 1.3rem;
+    color: white;
+    top: 20px;
+    left: 15px;
+    z-index: 999;
+  }
+  
+  .mobile-navigation {
+    background: whitesmoke;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    display: none;
+  }
+  
+  .mobile-navigation li {
+    margin: 0;
+  }
+  
+  .header.open .mobile-navigation {
+    display: flex;
+    position: absolute;
+    background: whitesmoke;
+  }
+  
+  .header.open .mobile-menu {
+    color:black;
+  }
+
+.butts{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 6em;
+}
+
+#btnBouba {
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  margin-right: 20px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 2rem;
+  padding: 10px 25px;
+  
+}
+
+#btnKiki{
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 2rem;
+  padding: 10px 35px;
+}
+
+#btnKiki:focus{
+  background-color: black;
+  color: white;
+}
+
+#btnBouba:focus{
+  background-color: black;
+  color: white;
+}
+
+.filts{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 1.5em;;
+}
+
+#btnMusic, #btnTv, #btnSports, #btnPolitics, #btnMisc{
+  font-family: 'Source Serif Pro';
+  font-size: 13px;
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 2rem;
+  padding: 10px 10px;
+  margin-right: .6rem;
+}
+
+#btnMusic:focus{
+  background-color: rgb(113, 113, 113);
+  color: white;
+}
+
+#btnTv:focus{
+  background-color: rgb(113, 113, 113);
+  color: white;
+}
+
+#btnSports:focus{
+  background-color: rgb(113, 113, 113);
+  color: white;
+}
+
+#btnPolitics:focus{
+  background-color: rgb(113, 113, 113);
+  color: white;
+}
+
+#btnMisc:focus{
+  background-color: rgb(113, 113, 113);
+  color: white;
+}
+
+  .grid-container 
+  {
+  padding: 0.3rem;  
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: max-content;
+  grid-gap:1.5rem; 
+  justify-items:center;
+  margin-left: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  margin-right: 1.5em;
+
+  }
+
+  .grid-container div 
+  {
+    padding: 0.4em;
+    background-color: black;
+    color: white;
+    font-size: 1.9rem;
+    text-align: center;
+    border-radius: 1rem;
+    height: max-content;
+  }
+
+  .grid-container img {
+  height: 50%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: .5rem;
+}
+
+#celebs p {
+  font-family: 'Bebas Neue';
+  margin: 10px;
+}
+
+  /* media query for desktop values */
+  @media only screen and (min-width: 800px) {
+    .header {
+      justify-content: space-between;
+      position: fixed;
+      
+    }
+  
+    .main-title {
+      text-align: left;
+      font-size: 2rem;
+    }
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      font-size: 1.7rem;
+      font-style: italic;
+    }
+  
+      ul{
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+  }
+  
+    ul li a{
+      display: inline-block;
+      padding: 0 20px;
+      text-decoration: none;
+      color:white;
+  }
+  
+  li a::after{
+      content:'';
+      display: block;
+      height: 4px;
+      width: 0;
+      background: white;
+      transition: all .5s;
+  }
+  
+  li a:hover::after{
+      width: 100%;
+  }
+  
+    .mobile-menu {
+      display: none;
+    }
+
+
+    .butts{
+      display:flex;
+      flex-direction: row;
+      justify-content: left;
+      margin-left: 3rem;
+      margin-top: 7em;
+    }
+    
+    #btnBouba {
+      font-family: 'Bebas Neue';
+      font-size: 30px;
+      margin-right: 20px;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 2rem;
+      padding: 10px 25px;
+    }
+    
+    #btnKiki{
+      font-family: 'Bebas Neue';
+      font-size: 30px;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 2rem;
+      padding: 10px 35px;
+    }
+    
+    #btnKiki:focus{
+      background-color: black;
+      color: white;
+    }
+    
+    #btnBouba:focus{
+      background-color: black;
+      color: white;
+    }
+    
+    .filts{
+      display:flex;
+      flex-direction: row;
+      justify-content: right;
+      margin-top: -2em;
+      margin-bottom: 1.5em;;
+      margin-right: 3.5em;
+    }
+    
+    #btnMusic, #btnTv, #btnSports, #btnPolitics, #btnMisc{
+      font-family: 'Source Serif Pro';
+      font-size: 20px;
+      background-color: white;
+      border: 1.5px solid black;
+      border-radius: 2rem;
+      padding: 10px 18px;
+      margin-right: .6rem;
+    }
+    
+    #btnMusic:focus{
+      background-color: rgb(113, 113, 113);
+      color: white;
+    }
+    
+    #btnTv:focus{
+      background-color: rgb(113, 113, 113);
+      color: white;
+    }
+    
+    #btnSports:focus{
+      background-color: rgb(113, 113, 113);
+      color: white;
+    }
+    
+    #btnPolitics:focus{
+      background-color: rgb(113, 113, 113);
+      color: white;
+    }
+    
+    #btnMisc:focus{
+      background-color: rgb(113, 113, 113);
+      color: white;
+    }
+
+
+
+
+
+
+
+  }
+  
+  

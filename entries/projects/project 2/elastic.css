@@ -1,0 +1,425 @@
+/* Some default properties to begin with  */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-right: 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* header styles begin here */
+.header {
+  width: 100%;
+  padding: 0 2rem;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: black;
+}
+
+.main-title {
+  font-family: 'Bebas Neue';
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.navigation {
+  display: none;
+  font-family: 'Bebas Neue';
+  font-size: 2rem;
+}
+
+.mobile-menu {
+  position: absolute;
+  font-family: 'Bebas Neue';
+  text-decoration: underline;
+  font-size: 1.3rem;
+  color: white;
+  top: 20px;
+  left: 15px;
+  z-index: 2;
+}
+
+.mobile-navigation {
+  background: whitesmoke;
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bebas Neue';
+  font-size: 2rem;
+  display: none;
+}
+
+.mobile-navigation li {
+  margin: 0;
+}
+
+.header.open .mobile-navigation {
+  display: flex;
+  position: absolute;
+  background: whitesmoke;
+}
+
+.header.open .mobile-menu {
+  color:black;
+}
+
+/* first section */
+.first-section {
+  min-height: 10vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bouki{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-bottom: 20pt;
+    }
+
+/* second section */
+.second-section {
+  background: whitesmoke;
+  display: flex;
+  padding: 2rem;
+}
+
+.second-section p {
+font-size: 1.5rem;
+font-family: 'Source Serif Pro';  
+color: black;
+margin-top: -10pt;
+margin-bottom: -9pt;
+}
+
+/* third section */
+.third-section {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-box {
+  margin: 3rem;
+  filter: drop-shadow(7px 7px 7px #727272);
+}
+
+.fourth-section {
+  min-height: 10vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main h2 {
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  font-family: 'Bebas Neue';
+}
+
+.fifth-section {
+  min-height: 10vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.h2fifth {
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  font-family: 'Source Serif Pro'; 
+}
+
+ .text-rainbow-animation {
+   background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+  animation: rainbow-animation 420s linear infinite;
+}
+
+.backToTop{
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  font-size: 1.5rem;
+  z-index: 999;
+  height: 35px;
+  width: 120px;
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Bebas Neue';
+  border-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.backToTop i{
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  color: #fff;
+}
+.backToTop i:hover{
+  color: #ffffff;
+}
+
+
+
+@keyframes rainbow-animation {
+    to {
+        background-position: 4500vh;
+    }}
+
+    /*
+    button {
+      position: fixed;
+      height: 2rem;
+      width: 5rem;
+      font-size: 1.5rem;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 1px 1px 5px black;
+      background-image: 
+      linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 420s linear infinite;
+    }
+  
+    @keyframes rainbow-animation {
+      to {
+          background-position: 4500vh;
+      }}
+*/
+
+.gallery 
+{
+padding: 0.3rem;  
+display: grid;
+grid-template-columns:repeat(auto-fit, minmax(15rem, 1fr));
+grid-template-rows: max-content;
+grid-gap:1rem; 
+justify-items:center;
+}
+/*Parameters for the Grid of images 
+-display grid: will show the content in one grid 
+-template-columns: sets the min and mix size of the columns for the grid depending on the size of the page 
+-auto-rows: sets the heught of each row. You could set mins and max for this, but I felt like it looked better with a singular value for right now. Plus there is still a decent level of responsive transition moving from desktop to phone 
+-grid gap: just used for spacing so each div isnt extremely close to the other 
+*/
+
+img 
+{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+/*Used to ensure that the images maintain their full height and width*/
+
+.art
+{
+ overflow: hidden;
+ border-radius: .5rem;
+ box-shadow: 3px 2px 3px 2px;
+}
+
+.art:hover 
+{
+transform: scale(1.5);
+cursor: pointer;
+border: 5px solid white; 
+}
+
+.bw{
+  display:inline-block;
+  }
+  .art:hover .bw{
+  display:none;
+  }
+  
+  .color{
+  display:none;
+  }
+  .art:hover .color{
+  display:inline-block;
+  }
+
+/* media query for desktop values */
+@media only screen and (min-width: 800px) {
+  .header {
+    justify-content: space-between;
+    position: fixed;
+    
+  }
+
+  .main-title {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.7rem;
+    font-style: italic;
+  }
+
+    ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+  ul li a{
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    color:white;
+}
+
+li a::after{
+    content:'';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: white;
+    transition: all .5s;
+}
+
+li a:hover::after{
+    width: 100%;
+}
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .first-section {
+    height: 8vh;
+    
+  }
+
+  .bouki{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  padding-bottom: 25pt;
+  
+    }
+
+  .second-section {
+    background: rgb(0, 0, 0);
+  }
+
+  .second-section p {
+    font-size: 1.5rem;
+    font-family: 'Source Serif Pro';  
+color: whitesmoke;
+  }
+
+  .image-box {
+    flex-basis: 38%;
+    margin: 3rem;
+  }
+
+  .backToTop{
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    font-size: 3em;
+    z-index: 9999;
+    height: 50px;
+    width: 150px;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .backToTop i{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: #fff;
+  }
+  .backToTop i:hover{
+    color: #ffffff;
+  }
+
+  
+.backToTop{
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  font-size: 1.4rem;
+  z-index: 999;
+  height: 35px;
+  width: 120px;
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Bebas Neue';
+  border-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.backToTop i{
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  color: #fff;
+}
+.backToTop i:hover{
+  color: #ffffff;
+}
+
+}
+

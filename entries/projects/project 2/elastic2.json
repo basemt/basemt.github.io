@@ -1,0 +1,247 @@
+[
+  {
+    "Name": "Kylie Jenner",
+    "Img": "kyliecolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 54.8,
+    "Category": "Misc."
+  },
+  {
+    "Name": "Zendaya",
+    "Img": "zendayacolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 61.9,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Frank Ocean",
+    "Img": "frankcolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 78.6,
+    "Category": "Music"
+  },
+  {
+    "Name": "Timothee Chalamet",
+    "Img": "timothee.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 73.8,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Emma Chamberlain",
+    "Img": "emmacolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 57.1,
+    "Category": "Misc."
+  },
+  {
+    "Name": "Selena Gomez",
+    "Img": "selenacolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 90.5,
+    "Category": "Music"
+  },
+  {
+    "Name": "Tom Holland",
+    "Img": "tomcolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 83.3,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Donald Trump",
+    "Img": "trumpcolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 54.8,
+    "Category": "Politics"
+  },
+  {
+    "Name": "Dwayne Johnson",
+    "Img": "rockcolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 71.4,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "SZA",
+    "Img": "szacolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 57.1,
+    "Category": "Music"
+  },
+  {
+    "Name": "Justin Bieber",
+    "Img": "justincolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 57.1,
+    "Category": "Music"
+  },
+  {
+    "Name": "Chris Rock",
+    "Img": "chriscolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 52.4,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Taylor Swift",
+    "Img": "taylorcolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 71.4,
+    "Category": "Music"
+  },
+  {
+    "Name": "Hailey Bieber",
+    "Img": "haileycolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 69,
+    "Category": "Misc."
+  },
+  {
+    "Name": "Ariana Grande",
+    "Img": "arianacolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 66.7,
+    "Category": "Music"
+  },
+  {
+    "Name": "Lionel Messi",
+    "Img": "messicolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 64.3,
+    "Category": "Sports"
+  },
+  {
+    "Name": "Noah Schnapp",
+    "Img": "noahcolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 81,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Jeff Bezos",
+    "Img": "bezoscolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 61.9,
+    "Category": "Misc."
+  },
+  {
+    "Name": "Lady Gaga",
+    "Img": "gagacolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 52.4,
+    "Category": "Music"
+  },
+  {
+    "Name": "Kanye West",
+    "Img": "kanyecolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 54.8,
+    "Category": "Music"
+  },
+  {
+    "Name": "Elon Musk",
+    "Img": "eloncolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 50.1,
+    "Category": "Misc."
+  },
+  {
+    "Name": "Tyler The Creator",
+    "Img": "tylercolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 64.3,
+    "Category": "Music"
+  },
+  {
+    "Name": "Jacob Elordi",
+    "Img": "jacobcolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 52.4,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Kim Kardashian",
+    "Img": "kimcolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 69,
+    "Category": "Misc."
+  },
+  {
+    "Name": "Miley Cyrus",
+    "Img": "mileycolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 57.1,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Channing Tatum",
+    "Img": "channingcolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 76.2,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Bradley Cooper",
+    "Img": "bradleycolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 57.1,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Will Smith",
+    "Img": "willcolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 83.3,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Barack Obama",
+    "Img": "obamacolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 69,
+    "Category": "Politics"
+  },
+  {
+    "Name": "Ice Spice",
+    "Img": "icecolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 50.1,
+    "Category": "Music"
+  },
+  {
+    "Name": "Oprah Winfrey",
+    "Img": "oprahcolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 83.3,
+    "Category": "Misc."
+  },
+  {
+    "Name": "Pete Davidson",
+    "Img": "petecolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 54.8,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Cristiano Ronaldo",
+    "Img": "ronaldocolor.png",
+    "Verdict": "Verdict: Kiki",
+    "Percentage": 73.8,
+    "Category": "Sports"
+  },
+  {
+    "Name": "Millie Bobby Brown",
+    "Img": "milliecolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 59.5,
+    "Category": "Tv/Film"
+  },
+  {
+    "Name": "Rihanna",
+    "Img": "rihannacolor.png",
+    "Verdict": "Verdict: Bouba",
+    "Percentage": 57.1,
+    "Category": "Music"
+  }
+]

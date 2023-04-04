@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo</title>
+    <link href='https://fonts.googleapis.com/css?family=Fjalla One|Great Vibes&effect=shadow-multiple' rel='stylesheet'>
+<style>
+.button {
+    background-color: rgb(247, 214, 174);
+    border: none;
+    color: blue;
+    border: 2px solid blue;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Fjalla One';
+    border-radius: 12px;
+  }
+
+  .button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>  
+<script>
+window.onload = () => {
+    const btn = document.querySelector("button");
+
+function random(num) {
+return Math.floor(Math.random() * num + 1);
+}
+
+    btn.addEventListener("click",() => {
+        const rndColor = `rgb(${random(255)}, ${random(255)}, ${random(255)}`;
+        document.body.style.backgroundColor = rndColor;
+    });
+}
+</script>
+</head>
+<body>
+    <button class="button">Change Color!</button>
+</body>
+
+</html>

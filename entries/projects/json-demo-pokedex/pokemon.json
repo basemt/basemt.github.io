@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "pokemon": "Bulbasaur",
+      "image": "bulbasaur.png",
+      "audio": "bulbasaur.mp3"
+    },
+    {
+      "id": 25,
+      "pokemon": "Pikachu",
+      "image": "pikachu.png",
+      "audio": "pikachu.mp3"
+    },
+    {
+      "id": 10,
+      "pokemon": "Kylie",
+      "image": "kyliecolor.png",
+      "audio": "pikachu.mp3"
+    }
+  ]
+
