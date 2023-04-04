@@ -63,7 +63,6 @@ toggleMenu.addEventListener( "click", () => {
         filteredData = data.filter(item => item.Category.includes(verdict))
         .sort((a, b) => b.Percentage - a.Percentage);
       }
-      
 
       // Loop through the filtered data and add each item to the div
       filteredData.forEach(item => {
@@ -72,18 +71,20 @@ toggleMenu.addEventListener( "click", () => {
         const p2 = document.createElement('p');
         const p3 = document.createElement('p');
         const img = document.createElement('img');
-
+        const a = document.createElement('a');
         // Set the text content and href attributes for the link
         p.textContent = item.Name;
         p2.textContent = item.Verdict;
         p3.textContent = item.Percentage + "%";
         img.src = "img/faces/" + item.Img;
-
+        let currentHref = item.Name.replace(/\s+/g, '');
+        a.href = currentHref + '.html'
         // Add the HTML tags to webpage
-        div.appendChild(p);
-        div.appendChild(img);
-        div.appendChild(p2);
-        div.appendChild(p3);
+        a.appendChild(p);
+        a.appendChild(img);
+        a.appendChild(p2);
+        a.appendChild(p3);
+        div.appendChild(a)
         celebs.appendChild(div);
       });
     }
