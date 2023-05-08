@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pizza Toppings</title>
+	<meta charset="utf-8">
+	<style>
+		canvas {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="myCanvas" width="600" height="400"></canvas>
+
+	<script>
+		// Define the canvas and context variables
+		var canvas = document.getElementById("myCanvas");
+		var ctx = canvas.getContext("2d");
+
+		// Fetch the JSON data from the file
+		fetch("pizza_data.json")
+			.then(response => response.json())
+			.then(data => {
+				// Loop through the data and draw the triangles
+				data.forEach(item => {
+					ctx.beginPath();
+					ctx.moveTo(item.x1, item.y1);
+					ctx.lineTo(item.x2, item.y2);
+					ctx.lineTo(item.x3, item.y3);
+					ctx.fillStyle = item.color;
+					ctx.fill();
+				});
+			})
+			.catch(error => console.error(error));
+	</script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+/* Some default properties to begin with  */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+    height:100%;
+    background-color: #4A69A4;
+    overflow: hidden; 
+  }
+  
+  #triangles {
+    position: relative;
+    height: 100%;
+    background-color: #4A69A4;
+    overflow: hidden; 
+  }
+  
+  .triangle {
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 24px solid #FFFFFF;
+    display: inline-block;
+  }
+
+
+  a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-right: 2rem;
+  }
+  
+  .footer {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* header styles begin here */
+  .header {
+    width: 100%;
+    padding: 0 2rem;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: black;
+  }
+  
+  .main-title {
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .navigation {
+    display: none;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+  }
+  
+  .mobile-menu {
+    position: absolute;
+    font-family: 'Bebas Neue';
+    text-decoration: underline;
+    font-size: 1.3rem;
+    color: white;
+    top: 20px;
+    left: 15px;
+    z-index: 2;
+  }
+  
+  .mobile-navigation {
+    background: whitesmoke;
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    display: none;
+  }
+  
+  .mobile-navigation li {
+    margin: 0;
+  }
+  
+  .header.open .mobile-navigation {
+    display: flex;
+    position: absolute;
+    background: whitesmoke;
+  }
+  
+  .header.open .mobile-menu {
+    color:black;
+  }
+  
+  
+  
+  /* media query for desktop values */
+  @media only screen and (min-width: 800px) {
+    .header {
+      justify-content: space-between;
+      position: fixed;
+      
+    }
+  
+    .main-title {
+      text-align: left;
+      font-size: 2rem;
+    }
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      font-size: 1.7rem;
+      font-style: italic;
+    }
+  
+      ul{
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+  }
+  
+    ul li a{
+      display: inline-block;
+      padding: 0 20px;
+      text-decoration: none;
+      color:white;
+  }
+  
+  li a::after{
+      content:'';
+      display: block;
+      height: 4px;
+      width: 0;
+      background: white;
+      transition: all .5s;
+  }
+  
+  li a:hover::after{
+      width: 100%;
+  }
+  
+    .mobile-menu {
+      display: none;
+    }
+  
+    .first-section {
+      height: 8vh;
+      
+    }
+  
+    .bouki{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding-bottom: 25pt;
+    
+      }
+  
+    .second-section {
+      background: rgb(0, 0, 0);
+    }
+  
+    .second-section p {
+      font-size: 1.5rem;
+      font-family: 'Source Serif Pro';  
+  color: whitesmoke;
+    }
+  
+    .image-box {
+      flex-basis: 38%;
+      margin: 3rem;
+    }
+  
+    .backToTop{
+      display: none;
+      position: fixed;
+      bottom: 100px;
+      right: 50px;
+      font-size: 3em;
+      z-index: 9999;
+      height: 50px;
+      width: 150px;
+      background-color: #ffffff;
+      text-align: center;
+      border-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .backToTop i{
+      position: absolute;
+      top: 0px;
+      left: 10px;
+      color: #fff;
+    }
+    .backToTop i:hover{
+      color: #ffffff;
+    }
+  
+    
+  .backToTop{
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 1.4rem;
+    z-index: 999;
+    height: 35px;
+    width: 120px;
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Bebas Neue';
+    border-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .backToTop i{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: #fff;
+  }
+  .backToTop i:hover{
+    color: #ffffff;
+  }
+  
+  }
+  
+  
