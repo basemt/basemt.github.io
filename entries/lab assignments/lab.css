@@ -1,9 +1,31 @@
 body {
-    background-color: rgb(247, 214, 174);
-    margin: 0;
-    padding: 20px;
+  background: url(/basemt.github.io/imgs/bg.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;    
+  margin: 0;
+  padding: 20px;
   }
   
+  h1, #p2{
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fadeec, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #f4cfe1, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+
   h1 {
     color: blue;
     font-family: 'Fjalla One';
@@ -34,9 +56,13 @@ body {
     margin: 0;
   }
 
+  p :hover{
+color: #fadeec;
+  }
+
   .about,
   .projs,
-  .home {
+  .home, #p2 {
     color: blue;
     font-family: 'Fjalla One';
     text-align: right;
@@ -55,7 +81,7 @@ body {
     .jsondemo,
     .layoutdemo,
     .domdemo,
-    p {
+    p, #p2 {
       font-size: 20px;
     }
   }
