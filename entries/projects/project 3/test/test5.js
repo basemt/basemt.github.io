@@ -1,3 +1,4 @@
+
  $(document).ready(function() {alert("To search for a slice, use the sliding scale at the top for your preferred price range between $1 and $7. \n \nYou now officially have access to NYC's ultimate pizza slice search engine, happy searching! \n \nI dare you to go try the first slice of pizza that you click on in your time here! Or don't, I really can't force you to do anything you don't want to. Enjoy! - Basem :)"); })
 
 
