@@ -1,29 +1,49 @@
 body {
-background-color: rgb(247, 214, 174);
-margin: 100px;
+    background-color: rgb(247, 214, 174);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 h1 {
     color: blue;
     font-family: 'Great Vibes';
     text-align: center;
-    font-size: 100px;
-    margin-top: -20pt;
-    
+    font-size: 48px;
+    margin-top: 0;
 }
 
 h2 {
     color: blue;
     font-family: 'Fjalla One';
     text-align: left;
-    font-size: 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 p {
     color: blue;
     font-family: 'Fjalla One';
     text-align: right;
-    font-size: 30px;
+    font-size: 24px;
+    margin: 0;
 }
 
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
 
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}

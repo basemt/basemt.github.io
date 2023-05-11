@@ -45,7 +45,7 @@ fetch('pizza_data.json')
       // console.log(map(myRange.value, 0, 100, 1, 7))
       let mappedValue = map(myRange.value, 0, 100, 1, 7);
       if (mappedValue === 2.5 || mappedValue === 4 || mappedValue === 3.25 ) {
-        jsonData.style.height = '175vh'
+        jsonData.style.height = '200vh'
         
       } else {
         jsonData.style.height = '85vh'
