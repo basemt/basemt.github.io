@@ -1,20 +1,13 @@
-/* Some default properties to begin with  */
-
 * {
     box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    background-color: black;
   }
 
   html {
     cursor: none;
   }
   #cursor {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     border-radius: 20px;
     background-color: #E52323;
     border:2px solid #950404; 
@@ -22,15 +15,14 @@
     z-index: 3;
   }
   
+  body {
+    margin: 0;
+    
+  }
+  
   a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
   }
   
   li {
@@ -56,6 +48,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
     background: black;
   }
   
@@ -70,6 +63,13 @@
     display: none;
     font-family: Helvetica, sans-serif;
     font-size: 2rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation #navlist {
+        margin-right: 2rem;
   }
   
   .mobile-menu {
@@ -113,105 +113,79 @@
   .header.open .mobile-menu {
     color:black;
   }
-  
-  
-  /* second section */
-  .second-section {
-    background: whitesmoke;
-    display: flex;
-    padding: 3rem;
-    
-  }
-  
-  .second-section p {
-  font-size: 1.5rem;
-  font-family: Helvetica, sans-serif;  
-  color: black;
-  margin-top: -10pt;
-  margin-bottom: -9pt;
-  }
-  
-  /* third section */
-  .third-section {
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .image-box {
-    margin: 3rem;
-    filter: drop-shadow(7px 7px 7px #727272);
-  }
-  
-  .fourth-section {
-    min-height: 10vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
- 
-  
-  .fifth-section {
-    min-height: 10vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .h2fifth {
-    text-transform: lowercase;
-    text-align: center;
-    font-size: 1.5rem;
-    color: whitesmoke;
-    font-family: 'Source Serif Pro'; 
-  }
-  
 
-  
-      /*
-      button {
-        position: fixed;
-        height: 2rem;
-        width: 5rem;
-        font-size: 1.5rem;
-        border-radius: 5px;
-        border: none;
-        box-shadow: 1px 1px 5px black;
-        background-image: 
-        linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;  
-      animation: rainbow-animation 420s linear infinite;
-      }
-    
-      @keyframes rainbow-animation {
-        to {
-            background-position: 4500vh;
-        }}
-  */
-  
-  /*Parameters for the Grid of images 
-  -display grid: will show the content in one grid 
-  -template-columns: sets the min and mix size of the columns for the grid depending on the size of the page 
-  -auto-rows: sets the heught of each row. You could set mins and max for this, but I felt like it looked better with a singular value for right now. Plus there is still a decent level of responsive transition moving from desktop to phone 
-  -grid gap: just used for spacing so each div isnt extremely close to the other 
-  */
-  
-  img 
-  {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+#json-data {
+  position: relative;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
   }
-  /*Used to ensure that the images maintain their full height and width*/
+
+  #json-data p {
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin: 10px;
+  }
+
+  #modal-close{
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.8rem;
+    text-align: right;
+    text-decoration: underline;
+  }
   
-  
-  /* media query for desktop values */
+  #modal-name {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.8rem;
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: -5px;
+  }
+
+  #modal-style {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: right;
+    margin-bottom: -30px;
+  }
+
+  #modal-consumptiondate {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #modal-price {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  #modal {
+    position: fixed;
+    top: 30%;
+    left: 45%;
+    height: 40%;
+    width: auto;
+    background-color: #EDEBEB;
+    border: 4px solid #E52323;
+    padding: 30px;
+    visibility: hidden;
+  }
+
+  .numbers{
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    display: block;
+  }
+
   @media only screen and (min-width: 800px) {
     .header {
       justify-content: space-between;
@@ -229,7 +203,7 @@
       font-style: italic;
     }
   
-      ul{
+      .navigation ul{
       display: flex;
       list-style-type: none;
       align-items: center;
@@ -259,9 +233,17 @@
       display: none;
     }
   
+    #json-data {
+        font-family: Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        margin: 30px;
+        height: 85vh;
+        border: 20px solid black;
+      }
+
     .first-section {
       height: 8vh;
-      
     }
   
     .second-section {
@@ -271,9 +253,59 @@
     .second-section p {
       font-size: 1.5rem;
       font-family: Helvetica, sans-serif;   
-  color: whitesmoke;
+      color: whitesmoke;
     }
-
+  
+    .shape {
+      position: absolute;
   }
   
+  .triangle {
+      width: 75px;
+      height: 80px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      border-radius: 30%;
+      background-color: #FFB74A;
+      border:5px solid #AE6900; 
+      transition: all 1s;
+
+      
+  }
+
+  .triangle:hover {
+    /* filter: drop-shadow(10px 10px 10px #1b1b1d77); */
+    transform: rotate(180deg);
+    border:5px solid #950404; 
+    background-image: linear-gradient(to bottom right,rgb(252, 158, 75), rgb(249, 118, 37), rgb(254, 191, 43));
+  }
+
+  .slice { 
+    width: 4px;
+    height: 100%;
+    background-color: #e8d83a;
+  }
+
+  .slice-1 {
+    transform: rotate(45deg);
+  }
+
+  .slider{
+    position: absolute;
+    width: 10vw;
+    height: 45.5vw;
+    outline: none;
+    top: 0;
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+  }
+
+#first, #rangevalue {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+  }
   
